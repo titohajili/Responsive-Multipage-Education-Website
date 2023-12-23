@@ -10,6 +10,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -207,13 +213,102 @@
 
 
 
+    <section class="container testimonials-container mySwiper">
+        <h2>Students' Testimonials</h2>
+        <div class="swiper-wrapper">
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar1.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Disns Syi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti amet illum dolorum temporibus sint! hamman.</p>
+                </div>
+
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar2.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Ernes Achiver</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti amet illum dolorum temporibus sint! hamman.</p>
+                </div>
+
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar3.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Tito Haki</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti amet illum dolorum temporibus sint! hamman.</p>
+                </div>
+
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar4.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Haja Bintu</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti amet illum dolorum temporibus sint! hamman.</p>
+                </div>
+
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar5.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Hinata Hyuga</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti amet illum dolorum temporibus sint! hamman.</p>
+                </div>
+
+            </article>
+            
+        </div>
+    </section>
 
 
 
+    
 
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          //when window width >= 700px
+
+          breakpoints: {
+            700: {
+                slidesPerView: 2
+            }
+          }
+        });
+      </script>
 </body>
 </html>
