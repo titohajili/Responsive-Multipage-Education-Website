@@ -34,6 +34,15 @@ window.addEventListener('scroll', () => {
  menuBtn.addEventListener('click', () => {
     menu.style.display = "flex";
     closeBtn.style.display = "inline-block";
-    menuBtn.style.display = "none"
+    menuBtn.style.display = "none";
  })
-// c
+// close nav menu 
+
+const closeNav = () => {
+    menu.style.display = "none";
+    closeBtn.style.display = "none";
+    menuBtn.style.display = "inline-block";
+
+}
+
+closeBtn.addEventListener('click', closeNav)
