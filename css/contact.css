@@ -1,0 +1,52 @@
+.contact-container{
+   background: var(--color-bg1);
+   padding: 4rem;
+   display: grid;
+   grid-template-columns: 50% 60%;
+   gap: 4rem;
+   height: 30rem;
+   margin: 7rem auto;
+   border-radius:1rem;
+}
+
+.contact-aside{
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+.aside-image{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+.contact-aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.contact-aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem ;
+}
+.contact-details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contact-sos{
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 3rem;
+}
+.contact-sos a{
+    background: var(--color-bg2);
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 0.7rem;
+    transition: all 400ms ease;
+}
+
+.contact-sos a:hover{
+    background: transparent;
+}
