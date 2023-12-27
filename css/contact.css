@@ -50,3 +50,75 @@
 .contact-sos a:hover{
     background: transparent;
 }
+
+.tito-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+.form-name{
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+.tito-form input[type="text"]{
+    width: 42.2%;
+}
+ input, textarea{
+    width: 87%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: white;
+}
+.tito-form .btn{
+    width: 87%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+/* ====mediaaa ======*/
+
+
+@media creen and (max-width:1024px){
+    .contact {
+        padding-bottom: 0;
+    }
+    .contact-container{
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+    .contact-aside{
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+    .tito-form{
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+
+}
+
+
+/* ====media phone--===== */
+@media screen and (max-width:600px){
+   
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .tito-form{
+        margin: 0 1.5rem 3rem;
+    }
+    .form-name{
+        flex-direction: column;
+    }
+    .form-name input{
+        width: 100%;
+    }
+}
